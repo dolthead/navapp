@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "navapp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
