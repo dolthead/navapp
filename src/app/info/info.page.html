@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let row of repeater(12); let i = index" button (click)="clicked(i)">
+      <ion-label>App Version</ion-label>
+      <ion-note slot="end">{{i+1}}.0.0</ion-note>
+    </ion-item>
+    <ion-button expand="block" (click)="closeModal()">Close</ion-button>
+  </ion-list>
+
+</ion-content>
